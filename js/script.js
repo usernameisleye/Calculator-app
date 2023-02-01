@@ -109,5 +109,10 @@ resetBtn.addEventListener('click', () =>{
     output.textContent = '';
 })
 equalsBtn.addEventListener('click', () => {
-    output.textContent = eval(output.textContent)
+    try{
+        output.textContent = eval(output.textContent);
+    }
+    catch(err){
+        output.textContent = 'Error'
+    }
 })
