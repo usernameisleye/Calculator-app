@@ -60,7 +60,7 @@ main{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     width: 30vw;
-    height: 50vh;
+    height: 55vh;
     padding: 1.5rem;
     border-radius: .5rem;
 }
@@ -77,8 +77,14 @@ main{
     border-bottom: 3px solid;
 }
 .reset, .del, .theme-section > span{
-    font-size: 24px;
+    font-size: 22px;
 }
 .span{
     grid-column: span 2;
+}
+
+@media screen and (max-width: 375px) {
+    .output, .controls{
+        width: 95vw;
+    } 
 }
