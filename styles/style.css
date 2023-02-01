@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'League Spartan', sans-serif;
 }
-body, main, .themeSection, .theme, .button, .themeNums, .themeBtns{
+body, main, .theme-section, .theme, .button, .theme-nums, .theme-btns, .output{
     display: flex;
 }
 body,
@@ -27,7 +27,7 @@ main{
 .theme-sets{
     width: 3.5rem;
 }
-.themeBtns{
+.theme-btns{
     height: 1.2rem;
     width: auto;
     gap: 2px;
@@ -39,16 +39,20 @@ main{
     width: 30%;
     border-radius: 50%;
 }
-.themeSection{
+.theme-section{
     justify-content: space-between;
 }
-.themeNums{
+.theme-nums{
     justify-content: space-around;
 }
 .output{
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 3rem;
     height: 6rem;
     width: auto;
     margin: 1rem 0;
+    padding: .5rem;
     border-radius: .5rem;
 }
 .controls{
@@ -57,6 +61,8 @@ main{
     grid-template-rows: repeat(5, 1fr);
     width: 30vw;
     height: 50vh;
+    padding: 1.5rem;
+    border-radius: .5rem;
 }
 .button{
     width: 100%;
@@ -66,10 +72,11 @@ main{
     cursor: pointer;
     border: none;
     outline: none;
+    padding-top: 3px;
     border-radius: 8px;
     border-bottom: 3px solid;
 }
-.func, .themeSection > span{
+.reset, .del, .theme-section > span{
     font-size: 24px;
 }
 .span{
