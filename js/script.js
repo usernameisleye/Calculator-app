@@ -48,8 +48,7 @@ allButtons.forEach(button => {
                         button.style.borderBottom = '3px solid hsl(6, 70%, 34%)';
                     }
                 }
-
-                if(themeLink.href == 'http://127.0.0.1:5500/styles/themeTwo.css'){
+                else if(themeLink.href == 'http://127.0.0.1:5500/styles/themeTwo.css'){
                         if(button.classList.contains('number')){
                             button.style.borderBottom = '3px solid hsl(28, 16%, 65%)';
                         }
@@ -66,8 +65,7 @@ allButtons.forEach(button => {
                             button.style.borderBottom = '3px solid hsl(25, 99%, 27%)';
                         }
                     }
-
-                if(themeLink.href == 'http://127.0.0.1:5500/styles/themeThree.css'){
+                else if(themeLink.href == 'http://127.0.0.1:5500/styles/themeThree.css'){
                         if(button.classList.contains('number')){
                             button.style.borderBottom = '3px solid hsl(290, 70%, 36%)';
                         }
@@ -97,7 +95,7 @@ numberBtns.forEach(button =>{
 })
 operationBtns.forEach(button =>{
     button.addEventListener('click', () =>{
-        output.textContent += button.textContent
+        output.textContent += button.value;
     })
 })
 delBtn.addEventListener('click', () =>{
