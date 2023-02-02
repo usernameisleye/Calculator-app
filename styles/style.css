@@ -74,7 +74,7 @@ main{
     font-size: 32px;
     cursor: pointer;
     border: none;
-    outline: none;
+    outline-color: transparent;
     padding-top: 3px;
     border-radius: 8px;
     border-bottom: 3px solid;

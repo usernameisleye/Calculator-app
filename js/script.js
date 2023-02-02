@@ -112,5 +112,9 @@ equalsBtn.addEventListener('click', () => {
     }
     catch(err){
         output.textContent = 'Error'
+        
+        setTimeout(() => {
+            output.textContent = ''
+        }, 1000)
     }
 })
