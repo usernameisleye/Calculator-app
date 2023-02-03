@@ -89,6 +89,12 @@ button:hover{
     grid-column: span 2;
 }
 
+@media screen and (max-width: 768px) {
+    main,.output, .controls{
+        width: 95vw;
+    } 
+}
+
 @media screen and (max-width: 375px) {
     main,.output, .controls{
         width: 95vw;
